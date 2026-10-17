@@ -1,9 +1,10 @@
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 /** @type {import('next').NextConfig} */
-export default {
-  output: "export",
-  trailingSlash: true,
-  basePath,
+const nextConfig = {
+  output: 'export',
   images: { unoptimized: true },
-  eslint: { ignoreDuringBuilds: true },
+  trailingSlash: true,
+  basePath: '/harsh.khandelwal.github.io',
+  assetPrefix: '/harsh.khandelwal.github.io/',
 };
+
+export default nextConfig;
